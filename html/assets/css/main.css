@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Alien-Encounters';
+    src:url('../fonts/Alien-Encounters.ttf.woff') format('woff'),
+        url('../fonts/Alien-Encounters.ttf.svg#Alien-Encounters') format('svg'),
+        url('../fonts/Alien-Encounters.ttf.eot'),
+        url('../fonts/Alien-Encounters.ttf.eot?#iefix') format('embedded-opentype'); 
+}
+
+/* CONTHRAX EXTRALIGHT */
+@font-face {
+    font-family: 'conthrax-el';
+    src: url('../fonts/conthrax-el-webfont.woff2') format('woff2'),
+         url('../fonts/conthrax-el-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* CONTHRAX LIGHT */
+@font-face {
+    font-family: 'conthrax-lt';
+    src: url('../fonts/conthrax-lt-webfont.woff2') format('woff2'),
+         url('../fonts/conthrax-lt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* CONTHRAX REGULAR */
+@font-face {
+    font-family: 'conthrax-rg';
+    src: url('../fonts/conthrax-rg-webfont.woff2') format('woff2'),
+B         url('../fonts/conthrax-rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* CONTHRAX BOLD */
+@font-face {
+    font-family: 'conthrax-bd';
+    src: url('../fonts/conthrax-bd-webfont.woff2') format('woff2'),
+         url('../fonts/conthrax-bd-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html, body {
+    margin: 0 auto;
+    height: 100%;
+}
+
+body {
+    /*overflow: hidden;*/
+    background-image: url(../img/BG.jpg);
+    background-color: #001020;
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    z-index: 0;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#logo {
+    width: 300px;
+    margin-top: 50px;
+}
+#ieg{
+    background-image: url(../img/IEG.png);
+    width: 757px;
+    height: 51px;
+    margin: 0 auto;
+    z-index: 3;
+}
+h2 {
+    padding-top: 7px;
+}
+#earth {
+    z-index: 1;
+    width: 550px;
+    position: fixed;
+    bottom: -300px;
+    left: -200px; 
+}
+
+#moon {
+    z-index: 0;
+    width: 100px;
+    position: fixed;
+    bottom: 150px;
+    left: 300px; 
+}
+
+#origine {
+    z-index: 1;
+    width: 500px;
+    position: fixed;
+    visibility:hidden;
+     
+}
+
+h2 {
+    font-family: "conthrax-lt";
+    font-size: 1.5em;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+}
+
+#opening {
+    font-size: 3.5em;
+    font-family: "conthrax-lt";
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+    padding: 20px 0 30px 0;
+    z-index: 3;
+    margin-top: 0px;
+    text-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+    background-color: rgba(255,255,255,0.1);
+}
+#opening:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color: lightgray;
+}
+#fb {
+    font-family: "conthrax-lt";
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    z-index: 3;
+}
+
+#logo_fb {
+    width: 40px;
+    margin: 10px auto;
+}
+#mailing {
+    font-family: "conthrax-lt";
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    z-index: 4;
+}
+
+#footer {
+    align-self: flex-end;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 0.6em;
+    line-height: 20px;
+    z-index: 3;
+    font-family: "conthrax-lt"
+}
+
+@media all and (max-device-width: 480px) {
+    html, body {
+    margin: 0 auto;
+}
+    body {
+        
+        background-image: url(../img/BG.jpg);
+        background-color: #001020;
+        background-position: top;
+        background-size: cover;
+        background-attachment: fixed;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    #header {
+        display: block;
+        margin: 20px auto 0 auto;
+    }
+    #logo {
+        width: 150px;
+        margin-top: 50px;
+        display: block;
+        margin: 0 auto;
+    }
+    #ieg{
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 300px;
+        line-height: 30px;
+        background: inherit;
+        display: block;
+        z-index: 3;
+    }
+    
+    h2 {
+        font-family: "conthrax-lt";
+        font-size: 1.3em;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        text-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+        display: block;
+    }
+
+    #opening {
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        font-family: "conthrax-lt";
+        border-bottom: 2px solid #fff;
+        border-top: 2px solid #fff;
+        padding: 10px 0;
+        text-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+        background-color: rgba(255,255,255,0.1);
+        display: block;
+        margin-top: 50px;
+        width: 100%;
+        z-index: 3;
+    }
+    
+    #footer {
+        align-self: flex-end;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        font-size: 0.6em;
+        line-height: 20px;
+        z-index: 3;
+        font-family: "conthrax-lt";
+        width: 400px;
+    }
+    
+    #earth {
+        z-index: 1;
+        width: 250px;
+        position: fixed;
+        bottom: -150px;
+        left: -50px; 
+    }
+
+    #moon {
+        z-index: 0;
+        width: 30px;
+        position: fixed;
+        bottom: 100px;
+        left: 100px; 
+    }
+
+    #origine {
+        z-index: 1;
+        width: 200px;
+        position: fixed; 
+        right: -100px;
+        top: -80px;
+    }
+}

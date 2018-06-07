@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>LINDMOR Industries - Immersive Escape Game</title>
+    <script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous">
+    </script>
+    <script>
+        function adjust() {
+            $('#origine').css('right', '-350px');
+            $('#origine').css('top', '-200px');
+            $('#origine').css('visibility', 'visible');
+        }
+    </script>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body onload="adjust()">
+    <div>
+        <div id="header">
+            <img src="assets/img/LOGO.png" alt="Logo LINDMOR Industries" id="logo">
+            <div id="ieg"><h2>Immersive Escape Game</h2></div>
+        </div>
+   </div>
+   <div id="opening"><a href="http://www.facebook.com/LINDMORIndustries">OUVERTURE DEBUT 2018</a></div>
+   <div id="fb">
+       <span>En savoir plus</span>
+       <a href="http://www.facebook.com/LINDMORIndustries"><img id="logo_fb" src="assets/img/facebook.png" alt="logo faacebook"></a>
+    </div>
+    <div id="mailing">Vous pourrez prochainement vous inscrire afin d'être informé de l'ouverture de nos salles.</div>
+    <div id="footer">
+        SARL LINDMOR Industries - 9 rue André Marie-Ampère, ZAC de la Ménude, 31830 Plaisance du Touch<br>
+        contact@lindmor-industries.com - RCS Toulouse 831 604 715
+    </div>
+    <img id="earth" src="assets/img/earth.png">
+    <img id="moon" src="assets/img/moon.png">
+    <img id="origine" src="assets/img/origine.png">
+    <script>
+    $('body').mousemove(function(e){
+    var amountMovedX = (e.pageX * -1 / 50);
+    var amountMovedY = (e.pageY * -1 / 50);
+    var earthX = (e.pageX * -1 / 50 - 200);
+    var earthY = (e.pageY * -1 / 50 - 300);
+    var moonX = (e.pageX * -1 / 20 + 300);
+    var moonY = (e.pageY * -1 / 20 + 150);
+    var origineX = (e.pageX * -1 / 80 + (window.innerWidth - 150));
+    var origineY = (e.pageY * -1 / 80  + (window.innerHeight - 300));
+    $(this).css('background-position',  amountMovedX + 'px ' + amountMovedY + 'px');
+    $('#earth').css('bottom', earthY + 'px ');
+    $('#earth').css('left', earthX + 'px ');
+    $('#moon').css('bottom', moonY + 'px ');
+    $('#moon').css('left', moonX + 'px ');
+    $('#origine').css('bottom', origineY + 'px ');
+    $('#origine').css('left', origineX + 'px ');
+});</script>
+    <script>
+</body>
+</html>
